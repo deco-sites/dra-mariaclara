@@ -6,6 +6,13 @@ export default {
   content: ["./**/*.tsx"],
   theme: {
     container: { center: true },
+    fontFamily: {
+      "display": ['"Plus Jakarta Sans", sans-serif'],
+      "body": ['"Inter", sans-serif'],
+    },
+    colors: {
+      "gray-dark": "#353535",
+    },
     extend: {
       animation: {
         sliding: "sliding 30s linear infinite",

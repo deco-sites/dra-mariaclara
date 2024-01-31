@@ -60,9 +60,9 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:grid lg:grid-cols-3 items-center border-b border-base-200 w-full px-6">
+      <div class="hidden lg:grid lg:grid-cols-3 items-center border-b border-base-200 w-[80%] px-[30px] rounded-[15px] bg-[#EAEBE6] mx-auto">
         <div
-          class={`flex gap-6 col-span-1 ${
+          class={`flex gap-6 col-span-2 ${
             logoPosition === "left" ? "justify-center" : "justify-start"
           }`}
         >
@@ -73,24 +73,25 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
             logoPosition === "left"
               ? "justify-start -order-1"
               : "justify-center"
-          }`}
+          } w-[170px]`}
         >
           {logo && (
             <a
               href="/"
               aria-label="Store logo"
-              class="block"
+              class="block w-[100%]"
             >
               <Image
                 src={logo.src}
                 alt={logo.alt}
                 width={logo.width || 100}
                 height={logo.height || 13}
+                class="w-[100%]"
               />
             </a>
           )}
         </div>
-        <div class="flex-none flex items-center justify-end gap-6 col-span-1">
+        <div class="flex-none flex items-center justify-end gap-6 col-span-2">
           {!buttons?.hideSearchButton && (
             <div class="flex items-center text-xs font-thin gap-1">
               <SearchButton />SEARCH
