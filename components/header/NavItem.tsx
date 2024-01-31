@@ -8,8 +8,8 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li class="group flex items-center">
-      <a href={url} class="py-6">
-        <span class="group-hover:underline text-xs font-thin">
+      <a href={url} class="py-6 cursor-pointer">
+        <span class="font-body text-[#1E1A1A] text-[15px] font-light">
           {name}
         </span>
       </a>
@@ -33,15 +33,14 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             <ul class="flex items-start justify-center gap-6">
               {children.map((node) => (
                 <li class="p-6">
-                  <a class="hover:underline" href={node.url}>
-                    <span>{node.name}</span>
+                  <a class="" href={node.url}>
+                    <span class="font-body">{node.name}</span>
                   </a>
-
                   <ul class="flex flex-col gap-1 mt-4">
                     {node.children?.map((leaf) => (
                       <li>
-                        <a class="hover:underline" href={leaf.url}>
-                          <span class="text-xs">{leaf.name}</span>
+                        <a class="" href={leaf.url}>
+                          <span class="font-body">{leaf.name}</span>
                         </a>
                       </li>
                     ))}

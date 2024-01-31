@@ -16,7 +16,7 @@ function Placeholder() {
 function Container({ children }: Props) {
   if (!context.isDeploy && typeof children?.Component !== "function") {
     return (
-      <div class="bg-primary bg-opacity-5 p-4">
+      <div class="bg-[#353535] bg-opacity-5 p-4">
         <Container children={{ Component: Placeholder, props: {} }} />
       </div>
     );
