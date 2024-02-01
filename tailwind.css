@@ -28,6 +28,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
   .features {
     @apply flex items-center justify-center gap-6 flex-wrap;

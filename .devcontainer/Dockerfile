@@ -1,9 +1,9 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-buster
 
 ENV DENO_INSTALL=/deno
-RUN mkdir -p /deno \
+RUN mkdir -p /Users/rodrigoaraujo/.deno/bin/deno \
     && curl -fsSL https://deno.land/x/install/install.sh | sh \
-    && chown -R vscode /deno
+    && chown -R vscode /Users/rodrigoaraujo/.deno/bin/deno
 
 ENV PATH=${DENO_INSTALL}/bin:${PATH} \
     DENO_DIR=${DENO_INSTALL}/.cache/deno

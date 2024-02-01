@@ -5,8 +5,7 @@ export interface Props {
   containerWidth?: number;
 }
 
-const DEFAULT_TEXT =
-  `<h2 class="home-title">QUEM SOU EU</h2>
+const DEFAULT_TEXT = `<h2 class="home-title">QUEM SOU EU</h2>
   <p class="home-content">
   <b>Minha relação com a Medicina começou cedo.</b> 
   Quando criança, ao ser questionada sobre o que 
@@ -35,6 +34,7 @@ export default function RichText(
         margin: "50px auto",
       }}
       class="flex container flex-col sobre-mim w-[44%]"
+      id="quem-sou-eu"
     >
     </div>
   );
