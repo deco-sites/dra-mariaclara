@@ -28,17 +28,20 @@ export default function Benefits(
       icon: "Truck",
       label: "Entrega em todo Brasil",
       description: "Consulte o prazo no fechamento da compra.",
-      image: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+      image:
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }, {
       icon: "Discount",
       label: "15% na primeira compra",
       description: "Aplicado direto na sacola de compras.",
-      image: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+      image:
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }, {
       icon: "ArrowsPointingOut",
       label: "Devolução grátis",
       description: "Veja as condições para devolver seu produto.",
-      image: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e"
+      image:
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }],
     layout,
   } = props;
@@ -55,26 +58,26 @@ export default function Benefits(
         class={`${
           reverse ? "bg-primary text-[#383838] p-4 lg:px-8 lg:py-4" : ""
         } flex items-center justify-center ${
-          benefitLayout == "piledup" ? "flex-col items-center text-center text-[#383838]" : ""
-        } ${
-          showDivider && benefitLayout !== "piledup"
-            ? ""
+          benefitLayout == "piledup"
+            ? "flex-col items-center text-center text-[#383838]"
             : ""
-        } ${showDivider ? "pb-4 " : ""} ${
-          showDivider && !reverse ? "lg:pb-0" : ""
-        }`}
+        } ${showDivider && benefitLayout !== "piledup" ? "" : ""} ${
+          showDivider ? "pb-4 " : ""
+        } ${showDivider && !reverse ? "lg:pb-0" : ""}`}
       >
         <div class="flex bg-[#FCFAFA] rounded-[50%] p-[10px] mx-[10px]">
-          {/* <Icon
+          {
+            /* <Icon
             id={benefit.icon}
             class={reverse ? "text-base-100" : "text-primary"}
             width={33}
             height={33}
             strokeWidth={0.01}
             fill="#383838"
-          /> */}
-          <Image 
-            src={benefit.image} 
+          /> */
+          }
+          <Image
+            src={benefit.image}
             width={33}
             height={33}
             decoding="async"
@@ -89,13 +92,15 @@ export default function Benefits(
           >
             {benefit.label}
           </div>
-          {/* <p
+          {
+            /* <p
             class={`text-sm leading-5 text-[#383838] ${
               reverse ? "text-base-100" : "text-neutral"
             } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
           >
             {benefit.description}
-          </p> */}
+          </p> */
+          }
         </div>
       </div>
     );

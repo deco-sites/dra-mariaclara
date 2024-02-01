@@ -91,7 +91,7 @@ export default function bannerMain(props: Props) {
             height={500}
           />
           <img
-            class="w-[145%] absolute top-[-100px] z-50 right-[-150px] block max-w-[1003px]"
+            class="w-[145%] absolute top-[-100px] right-[-150px] block max-w-[1003px]"
             src={banners[0].srcDesktop}
             alt={banners[0].alt}
             decoding="async"
