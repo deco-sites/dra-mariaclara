@@ -3,7 +3,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 
 export interface BannerMainAtendimento {
-    srcDesktop?: ImageWidget;
+  srcDesktop?: ImageWidget;
 }
 
 export interface Props {
@@ -13,7 +13,7 @@ export interface Props {
 }
 
 const DEFAULT_PROPS: Props = {
-    text: `MEU ATENDIMENTO
+  text: `MEU ATENDIMENTO
     Você merece se sentir confiante, feliz e radiante em 
     sua própria pele. E eu estou aqui para guiá-la nessa jornada 
     de descoberta e cuidado, onde a beleza e o bem-estar se 
@@ -31,19 +31,20 @@ const DEFAULT_PROPS: Props = {
     Nós sabemos o quanto a autoestima impacta em nossas 
     atitudes e até mesmo nas relações interpessoais e é por 
     isso que não se trata apenas de estética.`,
-    imagem: [
-      {
-        srcDesktop: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7"
-      }
-    ]
-}
+  imagem: [
+    {
+      srcDesktop:
+        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    },
+  ],
+};
 
 export default function RichText(props: Props) {
   const {
     text,
     imagem,
-    containerWidth
-  } = { ...DEFAULT_PROPS, ...props}
+    containerWidth,
+  } = { ...DEFAULT_PROPS, ...props };
   return (
     <div class="flex items-center bg-[#EAEBE6]" id="meu-atendimento">
       <div class="container flex items-center py-[40px]">
