@@ -45,13 +45,14 @@ import * as $$$$$$37 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$38 from "./sections/Miscellaneous/Slide.tsx";
 import * as $$$$$$39 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$40 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$41 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$42 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$43 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$44 from "./sections/BannerMain/BannerMain.tsx";
-import * as $$$$$$45 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$46 from "./sections/Header/Header.tsx";
-import * as $$$$$$47 from "./sections/Atendimento/Atendimento.tsx";
+import * as $$$$$$41 from "./sections/OQueEncontrar/OQueEncontrar.tsx";
+import * as $$$$$$42 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$43 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$44 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$45 from "./sections/BannerMain/BannerMain.tsx";
+import * as $$$$$$46 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$47 from "./sections/Header/Header.tsx";
+import * as $$$$$$48 from "./sections/Atendimento/Atendimento.tsx";
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
 
@@ -62,8 +63,8 @@ const manifest = {
   },
   "sections": {
     "deco-sites/dra-mariaclara/sections/Animation/Animation.tsx": $$$$$$14,
-    "deco-sites/dra-mariaclara/sections/Atendimento/Atendimento.tsx": $$$$$$47,
-    "deco-sites/dra-mariaclara/sections/BannerMain/BannerMain.tsx": $$$$$$44,
+    "deco-sites/dra-mariaclara/sections/Atendimento/Atendimento.tsx": $$$$$$48,
+    "deco-sites/dra-mariaclara/sections/BannerMain/BannerMain.tsx": $$$$$$45,
     "deco-sites/dra-mariaclara/sections/Category/CategoryBanner.tsx": $$$$$$3,
     "deco-sites/dra-mariaclara/sections/Category/CategoryGrid.tsx": $$$$$$5,
     "deco-sites/dra-mariaclara/sections/Category/CategoryList.tsx": $$$$$$4,
@@ -80,7 +81,7 @@ const manifest = {
     "deco-sites/dra-mariaclara/sections/Content/Testimonials.tsx": $$$$$$19,
     "deco-sites/dra-mariaclara/sections/Footer/Footer.tsx": $$$$$$1,
     "deco-sites/dra-mariaclara/sections/Gallery.tsx": $$$$$$0,
-    "deco-sites/dra-mariaclara/sections/Header/Header.tsx": $$$$$$46,
+    "deco-sites/dra-mariaclara/sections/Header/Header.tsx": $$$$$$47,
     "deco-sites/dra-mariaclara/sections/Images/BannerGrid.tsx": $$$$$$7,
     "deco-sites/dra-mariaclara/sections/Images/Carousel.tsx": $$$$$$9,
     "deco-sites/dra-mariaclara/sections/Images/ImageGallery.tsx": $$$$$$8,
@@ -89,14 +90,16 @@ const manifest = {
     "deco-sites/dra-mariaclara/sections/Layout/Flex.tsx": $$$$$$12,
     "deco-sites/dra-mariaclara/sections/Layout/Grid.tsx": $$$$$$11,
     "deco-sites/dra-mariaclara/sections/Layout/GridItem.tsx": $$$$$$13,
-    "deco-sites/dra-mariaclara/sections/Links/LinkTree.tsx": $$$$$$42,
-    "deco-sites/dra-mariaclara/sections/Links/Shortcuts.tsx": $$$$$$43,
+    "deco-sites/dra-mariaclara/sections/Links/LinkTree.tsx": $$$$$$43,
+    "deco-sites/dra-mariaclara/sections/Links/Shortcuts.tsx": $$$$$$44,
     "deco-sites/dra-mariaclara/sections/Miscellaneous/CampaignTimer.tsx":
       $$$$$$36,
     "deco-sites/dra-mariaclara/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$37,
     "deco-sites/dra-mariaclara/sections/Miscellaneous/Slide.tsx": $$$$$$38,
-    "deco-sites/dra-mariaclara/sections/Newsletter/Newsletter.tsx": $$$$$$45,
+    "deco-sites/dra-mariaclara/sections/Newsletter/Newsletter.tsx": $$$$$$46,
+    "deco-sites/dra-mariaclara/sections/OQueEncontrar/OQueEncontrar.tsx":
+      $$$$$$41,
     "deco-sites/dra-mariaclara/sections/Product/ImageGalleryFrontBack.tsx":
       $$$$$$32,
     "deco-sites/dra-mariaclara/sections/Product/ImageGallerySlider.tsx":
@@ -114,7 +117,7 @@ const manifest = {
     "deco-sites/dra-mariaclara/sections/SobreMim/SobreMim.tsx": $$$$$$2,
     "deco-sites/dra-mariaclara/sections/Social/InstagramPosts.tsx": $$$$$$40,
     "deco-sites/dra-mariaclara/sections/Social/WhatsApp.tsx": $$$$$$39,
-    "deco-sites/dra-mariaclara/sections/Theme/Theme.tsx": $$$$$$41,
+    "deco-sites/dra-mariaclara/sections/Theme/Theme.tsx": $$$$$$42,
   },
   "apps": {
     "deco-sites/dra-mariaclara/apps/decohub.ts": $$$$$$$$$$$0,
