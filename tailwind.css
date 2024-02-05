@@ -35,7 +35,7 @@ html {
 
 body {
   background-color: #353535;
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 @layer components {
