@@ -4,7 +4,7 @@ import Header from "$store/components/ui/SectionHeader.tsx";
 import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
-  titleHeader?: string
+  titleHeader?: string;
   title?: string;
   description?: string;
   benefits?: Array<{
@@ -17,7 +17,7 @@ export interface Props {
     variation?: "Simple" | "With border" | "Color reverse";
     headerAlignment?: "center" | "left";
   };
-  imageHeader?: ImageWidget
+  imageHeader?: ImageWidget;
 }
 
 export default function Benefits(
@@ -30,24 +30,28 @@ export default function Benefits(
     benefits = [{
       icon: "Truck",
       label: "Minha experiência profissional:",
-      description: "uma sólida trajetória na área de dermatologia. Empatia, conhecimento e expertise são o alicerce do meu atendimento. Minha prática é fundamentada em anos de aprendizado contínuo e atualizações constantes, garantindo os tratamentos mais avançados e eficazes para você.",
+      description:
+        "uma sólida trajetória na área de dermatologia. Empatia, conhecimento e expertise são o alicerce do meu atendimento. Minha prática é fundamentada em anos de aprendizado contínuo e atualizações constantes, garantindo os tratamentos mais avançados e eficazes para você.",
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }, {
       icon: "Discount",
       label: "Dermatologia Integrativa:",
-      description: "acredito que a beleza é muito mais do que apenas aparência. É uma expressão do seu bem-estar interno e externo. Ofereço tratamentos personalizados que abordam não apenas as questões dermatológicas, mas também promovem a saúde mental e a autoconfiança.",
+      description:
+        "acredito que a beleza é muito mais do que apenas aparência. É uma expressão do seu bem-estar interno e externo. Ofereço tratamentos personalizados que abordam não apenas as questões dermatológicas, mas também promovem a saúde mental e a autoconfiança.",
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }, {
       icon: "ArrowsPointingOut",
       label: "Resultados que elevam a Autoestima:",
-      description: "meu foco é alcançar resultados que vão além da superfície da pele. Quero que você se sinta empoderada e confiante, com uma pele saudável que reflita a sua beleza única. Através de procedimentos cuidadosamente selecionados e orientações de cuidados com a pele",
+      description:
+        "meu foco é alcançar resultados que vão além da superfície da pele. Quero que você se sinta empoderada e confiante, com uma pele saudável que reflita a sua beleza única. Através de procedimentos cuidadosamente selecionados e orientações de cuidados com a pele",
       image:
         "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
     }],
     layout,
-    imageHeader = "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f2"
+    imageHeader =
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f2",
   } = props;
 
   const listOfBenefits = benefits.map((benefit, index) => {
@@ -68,7 +72,7 @@ export default function Benefits(
         } ${showDivider && benefitLayout !== "piledup" ? "" : ""} ${
           showDivider ? " " : ""
         } ${showDivider && !reverse ? "" : ""}`}
-      > 
+      >
         <div class="w-[80%] mx-auto flex flex-col items-start">
           <div class="flex bg-[#FCFAFA] rounded-[50%] p-[10px] mx-[10px] mb-[15px]">
             <Image
@@ -88,13 +92,13 @@ export default function Benefits(
               {benefit.label}
             </div>
             {
-            <p
-              class={`text-sm leading-5 text-[#1E1A1A] ${
-                reverse ? "text-base-100" : "text-[#1E1A1A]"
-              } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
-            >
-              {benefit.description}
-            </p>
+              <p
+                class={`text-sm leading-5 text-[#1E1A1A] ${
+                  reverse ? "text-base-100" : "text-[#1E1A1A]"
+                } ${benefitLayout == "piledup" ? "hidden lg:block" : ""}`}
+              >
+                {benefit.description}
+              </p>
             }
           </div>
         </div>
@@ -115,7 +119,9 @@ export default function Benefits(
                 decoding="async"
                 loading="lazy"
               />
-              <h3 class="font-display text-[50px] font-[700] block w-[53%] mx-auto text-[#EAEBE6] text-center">{titleHeader}</h3>
+              <h3 class="font-display text-[50px] font-[700] block w-[53%] mx-auto text-[#EAEBE6] text-center">
+                {titleHeader}
+              </h3>
             </div>
             <Header
               title={title}
