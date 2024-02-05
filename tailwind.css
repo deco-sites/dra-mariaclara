@@ -30,6 +30,12 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #353535;
+}
+
+body {
+  background-color: #353535;
+  padding-top: 40px;
 }
 
 @layer components {
@@ -94,4 +100,14 @@ html {
   display: inline-block;
   background-repeat: no-repeat;
   background-position: 5px 5px;
+}
+
+.address-text p {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.address-text p:nth-child(2), .address-text p:nth-child(3) {
+  display: block;
+  margin-bottom: 10px;
 }

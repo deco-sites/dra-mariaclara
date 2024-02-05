@@ -9,7 +9,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
   return (
     <li class="group flex items-center">
       <a href={url} class="py-6 cursor-pointer">
-        <span class="font-body text-[#1E1A1A] text-[15px] font-light">
+        <span class="font-body text-[#1E1A1A] text-[13px] font-light">
           {name}
         </span>
       </a>

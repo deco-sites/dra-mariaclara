@@ -67,7 +67,7 @@ export default function bannerMain(props: Props) {
   } = { ...DEFAULT_PROPS, ...props };
 
   return (
-    <section class="flex items-start justify-around w-[80%] mx-auto max-[1440px] mb-[145px]">
+    <section class="flex items-start justify-around w-[80%] mx-auto max-[1440px] xl:mb-[110px] 2xl:mb-[145px] bg-[#353535]">
       <div class="w-[40%] mt-[10%]">
         <h1 class="font-display font-[900] text-[45px] leading-[50px] text-[#EAEBE6] block mb-[10px]">
           {h1}
