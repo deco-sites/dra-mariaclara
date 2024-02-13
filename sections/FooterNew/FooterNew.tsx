@@ -1,18 +1,19 @@
+import type { HTMLWidget } from "apps/admin/widgets.ts";
+
 export interface Props {
-    textFooter?: string
+    textFooter?: HTMLWidget
 }
 
-const DEFAULT_PROPS = {
-    textFooter: "Created with much love by WebSense™"
-}
+const DEFAULT_PROPS = 'Created with much love by <a href="https://www.websense.consulting/" target="_blank">WebSense Consulting™</a>'
 
-export default function FooterNew(props: Props) {
+export default function FooterNew( {textFooter = DEFAULT_PROPS} : Props) {
 
-    const { textFooter } = { ...DEFAULT_PROPS, ...props }
+    
 
     return (
-        <div class=" bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] py-[10px] mt-[20px]">
-            <p class="flex justify-center text-[#353535] text-[13px]">{textFooter}</p>
+        <div class=" bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] py-[10px]"
+            dangerouslySetInnerHTML={{ __html: textFooter }}
+        >
         </div>
     )
 }

@@ -55,7 +55,7 @@ export default function RichText(props: Props) {
   const mappingData = mapsContent.map((mapa) => {
 
     return (
-      <div class="flex flex-col text-left w-[35%]">
+      <div class="flex flex-col text-left w-[35%] max-[1020px]:w-[80%]">
         <iframe 
           src={mapa.linkIframe} 
           width="400" 
@@ -64,7 +64,7 @@ export default function RichText(props: Props) {
           allowfullscreen="" 
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
-          class="mb-[10px]"
+          class="mb-[10px] max-[1020px]:w-[100%]"
           >
         </iframe>
         <address class="flex flex-col address-text">
@@ -83,7 +83,7 @@ export default function RichText(props: Props) {
   return (
 
     <div
-      class="container mx-auto flex items-center justify-around flex-wrap"
+      class="container mx-auto flex items-center justify-around flex-wrap max-[1020px]:flex-col"
     >
       {mappingData}
     </div>

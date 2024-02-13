@@ -119,36 +119,28 @@ function Footer({
     form: { placeholder: "", buttonText: "", helpText: "" },
   },
   sections = [{
-    "label": "Sobre",
+    "label": "Quem sou eu",
     "items": [
       {
-        "href": "/quem-somos",
-        "label": "Quem somos",
+        "href": "#quem-sou-eu",
+        "label": "Procedimentos",
       },
       {
-        "href": "/termos-de-uso",
-        "label": "Termos de uso",
-      },
-      {
-        "href": "/trabalhe-conosco",
-        "label": "Trabalhe conosco",
-      },
+        "href": "#meu-atendimento",
+        "label": "Meu atendimento",
+      }
     ],
   }, {
     "label": "Atendimento",
     "items": [
       {
-        "href": "/centraldeatendimento",
-        "label": "Central de atendimento",
+        "href": "/procedimentos",
+        "label": "Procedimentos",
       },
       {
-        "href": "/whatsapp",
-        "label": "Fale conosco pelo WhatsApp",
-      },
-      {
-        "href": "/trocaedevolucao",
-        "label": "Troca e devolução",
-      },
+        "href": "/tratamentos",
+        "label": "Tratamentos",
+      }
     ],
   }],
   social = {
@@ -194,6 +186,7 @@ function Footer({
       sections={sections}
       justify={layout?.variation == "Variation 2" ||
         layout?.variation == "Variation 3"}
+        class="text-[#383838]"
     />
   );
   const _social = layout?.hide?.socialLinks
@@ -214,9 +207,7 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 pb-2 md:pb-10 gap-10 ${
-        ColorClasses(layout)
-      }`}
+      class={`w-full flex flex-col pt-10 gap-10 bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] mt-[15px]`}
     >
       <div class="lg:container mx-6 lg:mx-auto">
         {(!layout?.variation || layout?.variation == "Variation 1") && (
@@ -259,7 +250,7 @@ function Footer({
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
-              <PoweredByDeco />
+              {/* <PoweredByDeco /> */}
               {_links}
             </div>
           </div>
@@ -285,7 +276,7 @@ function Footer({
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10">
-              <PoweredByDeco />
+              {/* <PoweredByDeco /> */}
               {_links}
             </div>
           </div>
@@ -314,7 +305,7 @@ function Footer({
             <Divider />
             <div class="flex flex-col md:flex-row md:justify-between gap-10 md:items-center">
               {_logo}
-              <PoweredByDeco />
+              {/* <PoweredByDeco /> */}
             </div>
           </div>
         )}
@@ -333,7 +324,7 @@ function Footer({
             </div>
             <Divider />
             <div class="flex flex-col-reverse md:flex-row md:justify-between gap-10 md:items-center">
-              <PoweredByDeco />
+              {/* <PoweredByDeco /> */}
               <div class="flex flex-col md:flex-row gap-10 md:items-center">
                 {_links}
                 {_region}

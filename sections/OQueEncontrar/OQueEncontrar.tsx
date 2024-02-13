@@ -119,7 +119,7 @@ export default function Benefits(
                 decoding="async"
                 loading="lazy"
               />
-              <h3 class="font-display text-[50px] font-[700] block w-[53%] mx-auto text-[#EAEBE6] text-center">
+              <h3 class="font-display text-[50px] font-[700] block w-[53%] mx-auto text-[#EAEBE6] text-center max-[1020px]:w-[95%] max-[1020px]:text-[30px]">
                 {titleHeader}
               </h3>
             </div>
@@ -129,7 +129,7 @@ export default function Benefits(
               alignment={layout?.headerAlignment || "center"}
             />
             <div class="w-full flex justify-center container mt-[20px]">
-              <div class="flex flex-row gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr text-[#383838] items-center">
+              <div class="flex flex-row gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr text-[#383838] items-center max-[1020px]:flex-col">
                 {listOfBenefits}
               </div>
             </div>

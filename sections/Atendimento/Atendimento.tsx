@@ -47,7 +47,7 @@ export default function RichText(props: Props) {
   } = { ...DEFAULT_PROPS, ...props };
   return (
     <div class="flex items-center bg-[#EAEBE6]" id="meu-atendimento">
-      <div class="container flex items-center py-[40px]">
+      <div class="container flex items-center py-[40px] max-[1020px]:flex-col max-[1020px]:pt-[0]">
         <Picture class="">
           <Source
             src={imagem[0].srcDesktop}
@@ -55,7 +55,7 @@ export default function RichText(props: Props) {
             width={404}
           />
           <img
-            class=""
+            class="max-[1020px]:w-full"
             src={imagem[0].srcDesktop}
             decoding="async"
             loading="lazy"
@@ -67,7 +67,7 @@ export default function RichText(props: Props) {
             maxWidth: containerWidth ? containerWidth : 1280,
             margin: "50px auto",
           }}
-          class="flex flex-col sobre-mim w-[55%] text-[#353535]"
+          class="flex flex-col atendimento w-[55%] text-[#353535] max-[1020px]:w-[90%]"
         >
         </div>
       </div>
