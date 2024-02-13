@@ -33,7 +33,7 @@ export default function RichText(
         maxWidth: containerWidth ? containerWidth : 1280,
         margin: "50px auto",
       }}
-      class="flex container flex-col sobre-mim w-[44%]"
+      class="flex container flex-col sobre-mim w-[44%] max-[1020px]:w-[95%]"
       id="quem-sou-eu"
     >
     </div>

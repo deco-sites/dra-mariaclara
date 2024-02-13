@@ -49,7 +49,7 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
         )}
 
         <div class="flex justify-end gap-1">
-          <SearchButton />
+          {/* <SearchButton /> */}
           {platform === "vtex" && <CartButtonVTEX />}
           {platform === "vnda" && <CartButtonVDNA />}
           {platform === "wake" && <CartButtonWake />}
@@ -60,7 +60,7 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
       </div>
 
       {/* Desktop Version */}
-      <div class="hidden lg:grid lg:grid-cols-3 items-center border-b border-base-200 w-[80%] px-[30px] rounded-[15px] bg-[#EAEBE6] mx-auto">
+      <div class="hidden lg:grid lg:grid-cols-3 items-center  w-full px-[30px] bg-[#EAEBE6] mx-auto container">
         <div
           class={`flex gap-6 col-span-2 ${
             logoPosition === "left" ? "justify-center" : "justify-start"

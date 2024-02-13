@@ -86,7 +86,7 @@ function Header({
           searchbar={searchbar}
           platform={platform}
         >
-          <div class=" fixed w-full z-50">
+          <div class=" fixed w-full z-50 bg-[#EAEBE6]">
             {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
               items={items}

@@ -57,7 +57,7 @@ export default function Benefits(
       <div
         class={`${
           reverse ? "bg-primary text-[#383838] p-4 lg:px-8 lg:py-4" : ""
-        } flex items-center justify-center ${
+        } flex items-center justify-center max-[1020px]:w-full max-[1020px]:justify-between max-[1020px]:border-[#383838] max-[1020px]:border-solid max-[1020px]:border-b max-[1020px]:pb-4${
           benefitLayout == "piledup"
             ? "flex-col items-center text-center text-[#383838]"
             : ""
@@ -84,7 +84,7 @@ export default function Benefits(
             loading="lazy"
           />
         </div>
-        <div class=" flex flex-col w-[50%] benefits-child">
+        <div class=" flex flex-col w-[50%] benefits-child max-[1020px]:w-[100%]">
           <div
             class={`text-base leading-7 text-[#383838] font-body text-[22px] ${
               reverse ? "text-base-100" : "text-[#383838]"
@@ -110,14 +110,14 @@ export default function Benefits(
     <>
       {!layout?.variation || layout?.variation === "Simple"
         ? (
-          <div class="w-full px-4 py-8 flex flex-row  lg:py-10 lg:px-0 bg-gradient-to-r from-[#EAEBE6] to-[#DACABE]">
+          <div class="w-full px-4 py-8 flex flex-row  lg:py-10 lg:px-0 bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] max-[1020px]:flex-col">
             <Header
               title={title}
               description={description}
               alignment={layout?.headerAlignment || "center"}
             />
             <div class="w-full flex justify-center container">
-              <div class="flex flex-row gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr text-[#383838] items-center">
+              <div class="flex flex-row gap-4 lg:gap-8 w-full lg:grid grid-flow-col auto-cols-fr text-[#383838] items-center max-[1020px]:flex-col">
                 {listOfBenefits}
               </div>
             </div>
@@ -131,7 +131,7 @@ export default function Benefits(
             description={description}
             alignment={layout?.headerAlignment || "center"}
           />
-          <div class="w-full flex justify-center">
+          <div class="w-full flex justify-center max-[1020px]:flex-col">
             <div class="grid grid-cols-2 gap-4 w-full py-6 px-4 border border-base-300 lg:gap-8 lg:grid-flow-col lg:auto-cols-fr lg:p-10">
               {listOfBenefits}
             </div>
