@@ -15,7 +15,7 @@ export interface BannerMain {
 
 export interface Props {
   title?: string;
-  bannerMain?: BannerMain[];
+  bannerMain?: BannerMain;
   /**
    * @description Principal text
    */
@@ -36,30 +36,21 @@ export interface Props {
 
 const DEFAULT_PROPS: Props = {
   title: "Summer bags",
-  bannerMain: [
-    {
+  bannerMain: {
       alt: "a",
       href: "a",
-      srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
-    },
-    {
-      alt: "a",
-      href: "a",
-      srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf",
-    },
-  ],
+      srcDesktop: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
+  },
   h1: "Sua jornada para uma pele incrível e confiança renovada começa aqui",
   textBanner: "Explore a sua própria beleza através de cuidados personalizados",
   button: "Quero agendar minha consulta!",
   linkButtonBanner: "/",
 };
 
-export default function bannerMain(props: Props) {
+export default async function bannerMain(props: Props) {
   const {
     title,
-    banners = [],
+    bannerMain = {srcDesktop : '', alt: '', href: ''},
     h1,
     textBanner,
     button,
@@ -87,13 +78,13 @@ export default function bannerMain(props: Props) {
       <div class="w-[60%] relative max-[1020px]:z-1">
         <Picture class="">
           <Source
-            src={banners[0].srcDesktop}
+            src={bannerMain.srcDesktop}
             height={500}
           />
           <img
             class="w-[135%] absolute top-[-80px] right-[-150px] block max-w-[1003px] 2xl:w-[125%] 2xl:top-[-100px] max-[1020px]:w-[100%] max-[1020px]:top-[-162px] max-[1020px]:right-[-158px]"
-            src={banners[0].srcDesktop}
-            alt={banners[0].alt}
+            src={bannerMain.srcDesktop}
+            alt={bannerMain.alt}
             decoding="async"
             loading="lazy"
           />
