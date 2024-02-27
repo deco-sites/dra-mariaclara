@@ -7,6 +7,7 @@ export interface ImagePost {
     label?: string;
 }
 
+/** @title {{{title}}} */
 export interface Post {
     title?: string;
     title_post?: HTMLWidget;
@@ -14,7 +15,7 @@ export interface Post {
     short_description?: HTMLWidget;
     content_post?: HTMLWidget;
     author?: string;
-    link_post?: string;
+    url_post?: string;
     type_post?: "Procedimento" | "Tratamento";
 }
 
@@ -26,9 +27,24 @@ export interface Props {
 
 export function generateListPosts( post: Post[]) {
     return post?.map((post, index) => {
+        return post
+    })
+}
+
+
+const ContentPosts = ( props: Props ) => {
+    
+    const {
+        post = []
+    } = props
+
+    const listPosts = generateListPosts(post)
+
+    const postItems = listPosts.map((post, index) => {
+        const urlPost = `${(post?.type_post)?.toLocaleLowerCase()}/${post?.url_post}`
         return (
-            <li>
-                <a href={post.link_post} class="block px-3">
+            <li class="mb-[15px]">
+                <a href={urlPost} class="block px-3">
                     <article class="flex flex-col">
                         <figure class="w-full">
                             <Image
@@ -38,17 +54,17 @@ export function generateListPosts( post: Post[]) {
                                 width={200}
                                 height={300}
                             />
-                            <figcaption class="text-[16px] mt-4 font-light">{post.image_post?.label}</figcaption>
+                            <figcaption class="text-[20px] mt-4 font-bold">{post.image_post?.label}</figcaption>
                         </figure>
                         <div class="flex flex-col gap-1">
                             {/* <p class="text-base font-light pb-14 pt-2">{post.short_description}</p> */}
                             <div
                                 dangerouslySetInnerHTML={{ __html: post.short_description }}
-                                class="text-[14px] font-light pb-14 pt-2 font-display"
+                                class="text-[14px] font-light pt-2 font-display pb-[10px] line-clamp-3 max-h-[70px] text-ellipsis"
                             >
                             </div>
                             <div class="flex items-center justify-between">
-                                <p class="font-light text-xs">
+                                <p class="font-light text-[12px]">
                                     {post.author}
                                 </p>
                             </div>
@@ -58,21 +74,15 @@ export function generateListPosts( post: Post[]) {
             </li>
         )
     })
-}
 
 
-export default function ContentPosts( props: Props ) {
-    
-    const {
-        post = []
-    } = props
-
-    const listPosts = generateListPosts(post)
-    
     return (
         <ul class="grid grid-cols-[repeat(3,_1fr)] grid-rows-[repeat(3,_2fr)] gap-x-[10px] gap-y-[10px] container">
-            {listPosts}
+            {postItems}
         </ul>
     )
+    
 
 }
+
+export default ContentPosts

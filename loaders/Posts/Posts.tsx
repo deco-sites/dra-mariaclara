@@ -1,33 +1,11 @@
-import type { ImageWidget, HTMLWidget } from "apps/admin/widgets.ts";
+import { generateListPosts, Post } from "../../components/ui/ContentPosts.tsx";
 
-export interface ImagePost {
-    src: ImageWidget;
-    alt?: string;
-    label?: string;
+export type Props = {
+    list: Post[]
 }
 
-export interface Post {
-    title?: string;
-    title_post?: HTMLWidget;
-    image_post?: ImagePost;
-    short_description?: HTMLWidget;
-    content_post?: HTMLWidget;
-    author?: string;
-    link_post?: string;
-    type_post?: "Procedimento" | "Tratamento";
+const loaderPostData = ( {list}: Props ) => {
+    return list
 }
 
-export interface Props {
-    title?: string
-    post: Post[]
-}
-
-const loaderPosts = async ( post: Post[] ) => {
-
-    const posts = await post?.map((post, index) => {
-        return post;
-    })
-
-}
-
-export default loaderPosts
+export default loaderPostData
