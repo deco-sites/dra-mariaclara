@@ -27,15 +27,17 @@ export default function RichText(
   { text = DEFAULT_TEXT, containerWidth }: Props,
 ) {
   return (
-    <div
-      dangerouslySetInnerHTML={{ __html: text }}
-      style={{
-        maxWidth: containerWidth ? containerWidth : 1280,
-        margin: "50px auto",
-      }}
-      class="flex container flex-col sobre-mim w-[44%] max-[1020px]:w-[95%]"
-      id="quem-sou-eu"
-    >
+    <div class="sobre-mim relative w-full overflow-hidden">
+      <div
+        dangerouslySetInnerHTML={{ __html: text }}
+        style={{
+          maxWidth: containerWidth ? containerWidth : 1280,
+          margin: "50px auto",
+        }}
+        class="flex container flex-col w-[44%] max-[1020px]:w-[95%] overflow-hidden text-[#EAEBE6]"
+        id="quem-sou-eu"
+      >
+      </div>
     </div>
   );
 }

@@ -44,6 +44,7 @@ function Navbar({ items, searchbar, logo, buttons, logoPosition = "left" }: {
               alt={logo.alt}
               width={logo.width || 100}
               height={logo.height || 13}
+              class="w-full"
             />
           </a>
         )}

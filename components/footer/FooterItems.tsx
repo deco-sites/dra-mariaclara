@@ -20,7 +20,7 @@ export default function FooterItems(
           {/* Tablet and Desktop view */}
           <ul
             class={`hidden md:flex flex-row gap-6 lg:gap-10 ${
-              justify && "lg:justify-between"
+              justify && "lg:justify-start"
             }`}
           >
             {sections.map((section) => (
