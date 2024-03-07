@@ -55,8 +55,8 @@ export default function RichText(props: Props) {
   const mappingData = mapsContent.map((mapa) => {
 
     return (
-      <div class="flex flex-col text-left w-[35%] max-[1020px]:w-[80%]">
-        <iframe 
+      <div class="flex flex-col text-left w-[35%] max-[1020px]:w-[80%] my-[30px] text-[#EAEBE6]">
+        {/* <iframe 
           src={mapa.linkIframe} 
           width="400" 
           height="300" 
@@ -66,7 +66,7 @@ export default function RichText(props: Props) {
           referrerpolicy="no-referrer-when-downgrade"
           class="mb-[10px] max-[1020px]:w-[100%]"
           >
-        </iframe>
+        </iframe> */}
         <address class="flex flex-col address-text">
           <p><b>{mapa.funcionalDay}</b></p>
           <p>{mapa.timeDay}</p>
@@ -85,6 +85,7 @@ export default function RichText(props: Props) {
     <div
       class="container mx-auto flex items-center justify-around flex-wrap max-[1020px]:flex-col"
     >
+      <h2 class="w-[85%] mx-auto text-[30px] font-bold text-[#EAEBE6]">Endereços:</h2>
       {mappingData}
     </div>
   );
