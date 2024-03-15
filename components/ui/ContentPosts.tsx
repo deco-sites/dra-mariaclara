@@ -42,7 +42,7 @@ const ContentPosts = ( props: Props ) => {
     const postItems = listPosts.map((post, index) => {
         const urlPost = `${(post?.type_post)?.toLocaleLowerCase()}/${post?.url_post}`
         return (
-            <li class="mb-[15px] max-h-[300px] w-[350px] border rounded-[4px] border-[#EAEBE6]">
+            <li class="mb-[15px] max-h-[350px] w-[350px] border rounded-[4px] border-[#EAEBE6]">
                 <a href={urlPost} class="block">
                     <article class="flex flex-col">
                         <figure class="w-full max-h-[250px]">

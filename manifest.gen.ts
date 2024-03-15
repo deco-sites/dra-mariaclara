@@ -2,7 +2,7 @@
 // This file SHOULD be checked into source version control.
 // This file is automatically updated during development when running `dev.ts`.
 
-import * as $$$0 from "./loaders/Posts/Posts.tsx";
+import * as $$$0 from "./loaders/Posts/Posts.ts";
 import * as $$$1 from "./loaders/Layouts/ProductCard.tsx";
 import * as $$$2 from "./loaders/List/Sections.tsx";
 import * as $$$3 from "./loaders/GetCategories/GetCategories.tsx";
@@ -70,7 +70,7 @@ const manifest = {
     "deco-sites/dra-mariaclara/loaders/GetCategories/GetCategories.tsx": $$$3,
     "deco-sites/dra-mariaclara/loaders/Layouts/ProductCard.tsx": $$$1,
     "deco-sites/dra-mariaclara/loaders/List/Sections.tsx": $$$2,
-    "deco-sites/dra-mariaclara/loaders/Posts/Posts.tsx": $$$0,
+    "deco-sites/dra-mariaclara/loaders/Posts/Posts.ts": $$$0,
   },
   "sections": {
     "deco-sites/dra-mariaclara/sections/AgendeSuaConsulta/AgendeSuaConsulta.tsx":
