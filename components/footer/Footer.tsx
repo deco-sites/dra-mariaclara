@@ -207,9 +207,9 @@ function Footer({
 
   return (
     <footer
-      class={`w-full flex flex-col pt-10 gap-10 bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] mt-[15px]`}
+      class={`w-full flex flex-col pt-10 gap-5 bg-gradient-to-r from-[#EAEBE6] to-[#DACABE] mt-[15px]`}
     >
-      <div class="lg:container mx-6 lg:mx-auto">
+      <div class="lg:container mx-6 lg:mx-auto lg:border-solid lg:p-[35px] border-[#d8cbc1] lg:border-[1px]">
         {(!layout?.variation || layout?.variation == "Variation 1") && (
           <div class="flex flex-col gap-10">
             <div class="flex flex-col md:flex-row md:justify-between md:flex-wrap lg:flex-nowrap gap-8 lg:gap-12">
